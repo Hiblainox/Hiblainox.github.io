@@ -12,7 +12,7 @@
 
 <body class="colorfondo">
   <header>
-    <nav class="navbar navbar-expand-md colornavbar">
+    <nav class="navbar navbar-expand-md colornavbar p-0">
       <div class="container-fluid">
         <div class="navbar-brand" href="#">
           <img src="Hiblainox/Imagenes/logo.jpeg" class="rounded" width="80"  alt="">
@@ -23,62 +23,72 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-md-0 d-flex w-100">
-            <li class="nav-item">
-              <a class="nav-link active fs-3 text-center text-md-start" aria-current="page" href="#">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fs-3 text-center text-md-start" href="#">Servicios</a>
-            </li>
-            <li class="nav-item me-md-auto">
-              <a class="nav-link fs-3 text-center text-md-start" href="#formulario">Contacto</a>
-            </li>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav ms-0 mb-2 mb-md-0 mx-auto d-flex w-100">
+            <div class="d-flex align-items-center mx-auto me-md-auto ms-md-5" id="categorias">
+              <li class="nav-item">
+                <a class="nav-link active fs-3 text-center text-md-start mx-2" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item d-flex flex-column">
+                <a class="nav-link fs-3 text-center text-md-start mx-2" href="#">Servicios</a>
+              </li>
+              <li class="nav-item me-md-auto">
+                <a class="nav-link fs-3 text-center text-md-start mx-2" href="#formulario">Contacto</a>
+              </li>
+            </div>
             
             <!-- ÍCONOS PARA NAVBAR -->
-            <li class="nav-item d-none d-md-block">
-              <a class="nav-link fs-3 text-md-start ms-3" href="https://www.facebook.com/jesus.idalgo.52">
-                <img src="Hiblainox/Imagenes/facebook.svg" width="36" height="36" alt="">
-              </a>
-            </li>
-            <li class="nav-item d-none d-md-block">
-              <a class="nav-link fs-3 text-md-start ms-3" role="button" data-bs-toggle="tooltip"
-                data-bs-placement="bottom" data-clipboard-text="hiblainox@gmail.com" title="hiblainox@gmail.com">
-                <img src="Hiblainox/Imagenes/email.svg" width="36" height="36" alt="">
-              </a>
-            </li>
-            <li class="nav-item d-none d-md-block">
-              <a class="nav-link fs-3 text-md-start ms-3 " role="button" data-bs-toggle="tooltip"
-                data-bs-placement="bottom" title="672 11 05 19" data-clipboard-text="672 11 05 19">
-                <img src="Hiblainox/Imagenes/tel.svg" width="36" height="36" alt="">
-              </a>
-            </li>
-            <li class="nav-item d-none d-md-block">
-              <a class="nav-link fs-3 text-md-start me-md-4 ms-3" role="button" data-bs-toggle="tooltip"
-                data-bs-placement="bottom" data-clipboard-text="Avenida de la Peseta, Arahal, Spain"
-                title="Avenida de la Peseta, Arahal, Spain">
-                <img src="Hiblainox/Imagenes/localizacion.svg" width="36" height="36" alt="">
-              </a>
-            </li>
+            
+            <div class="d-flex flex-column me-5">
+              <li class="nav-item d-none d-md-block">
+                <a class="nav-link fs-3 text-md-start ms-3" role="button" data-bs-toggle="tooltip"
+                  data-bs-placement="bottom" data-clipboard-text="hiblainox@gmail.com" title="hiblainox@gmail.com">
+                  <img src="Hiblainox/Imagenes/email.svg" width="36" height="36" alt=""> :hiblainox@gmail.com
+                </a>
+              </li>
+              <li class="nav-item d-none d-md-block">
+                <a class="nav-link fs-3 text-md-start ms-3 " role="button" data-bs-toggle="tooltip"
+                  data-bs-placement="bottom" title="672 11 05 19" data-clipboard-text="672 11 05 19">
+                  <img src="Hiblainox/Imagenes/tel.svg" width="36" height="36" alt=""> : 672 11 05 19
+                </a>
+              </li>
+            </div>
+            <div class="d-flex flex-column">
+              <li class="nav-item d-none d-md-block">
+                <a class="nav-link fs-3 text-md-start ms-3" href="https://www.facebook.com/jesus.idalgo.52">
+                  <img src="Hiblainox/Imagenes/facebook.svg" width="42" height="42" alt="">
+                </a>
+              </li>
+              <li class="nav-item d-none d-md-block me-5">
+                <a class="nav-link fs-3 text-md-start me-md-4 ms-3" role="button" data-bs-toggle="tooltip"
+                  data-bs-placement="bottom" data-clipboard-text="Avenida de la Peseta, Arahal, Spain"
+                  title="Avenida de la Peseta, Arahal, Spain" href="#mapa">
+                  <img src="Hiblainox/Imagenes/localizacion.svg" width="36" height="36" alt="">
+                </a>
+              </li>
+            </div>
 
             <!-- ÍCONOS SOLO EN MÓVIL (alineados en una línea) -->
             <li class="nav-item d-md-none w-100" >
-              <div class="d-flex justify-content-center gap-4 my-2">
-                <a class="nav-link" href="https://www.facebook.com/jesus.idalgo.52">
-                  <img src="Hiblainox/Imagenes/facebook.svg" width="36" height="36" alt="">
-                </a>
-                <a class="nav-link" role="button" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                  data-clipboard-text="hiblainox@gmail.com" title="hiblainox@gmail.com">
-                  <img src="Hiblainox/Imagenes/email.svg" width="36" height="36" alt="">
-                </a>
-                <a class="nav-link" role="button" data-bs-toggle="tooltip" data-bs-placement="bottom"
+              <div class="d-flex justify-content-center gap-4 my-2 flex-wrap">
+                <div class="w-100 d-flex justify-content-center">
+                  <a class="nav-link d-inline" role="button" data-bs-toggle="tooltip" data-bs-placement="bottom"
                   data-clipboard-text="672 11 05 19" title="672 11 05 19">
-                  <img src="Hiblainox/Imagenes/tel.svg" width="36" height="36" alt="">
-                </a>
-                <a class="nav-link" role="button" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                  data-clipboard-text="Avenida de la Peseta, Arahal, Spain" title="Avenida de la Peseta, Arahal, Spain">
-                  <img src="Hiblainox/Imagenes/localizacion.svg" width="36" height="36" alt="">
-                </a>
+                  <img src="Hiblainox/Imagenes/tel.svg" width="36" height="36" alt=""> :672 11 05 19
+                                </a>
+                                <br>
+                                <a class="nav-link d-inline ms-3" role="button" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                  data-clipboard-text="hiblainox@gmail.com" title="hiblainox@gmail.com">
+                  <img src="Hiblainox/Imagenes/email.svg" width="36" height="36" alt=""> :hiblainox@gmail.com
+                                </a>
+                </div>
+            <a class="nav-link" href="https://www.facebook.com/jesus.idalgo.52">
+              <img src="Hiblainox/Imagenes/facebook.svg" width="36" height="36" alt="">
+            </a>
+            <a class="nav-link" role="button" data-bs-toggle="tooltip" data-bs-placement="bottom"
+              data-clipboard-text="Avenida de la Peseta, Arahal, Spain" title="Avenida de la Peseta, Arahal, Spain" href="#mapa">
+              <img src="Hiblainox/Imagenes/localizacion.svg" width="36" height="36" alt="">
+            </a>
               </div>
             </li>
 
@@ -193,9 +203,10 @@
 
     
     
-    <section class="row colorcontacto mt-3 d-flex justify-content-center ">
-      <article class="col d-flex align-items-center justify-content-center bg-success">
-        <form class="d-flex flex-column my-5 colorformulario p-5 reveal-on-scroll " id="formulario"
+    <section class="row colorcontacto mt-3 d-flex justify-content-center p-5">
+      <p id="formtext" class="text-center">Contactanos</p>
+      <article class="col d-flex align-items-center justify-content-center ">
+        <form class="d-flex flex-column  colorformulario p-5 reveal-on-scroll " id="formulario"
         action="https://formspree.io/f/movdlaej"
         method="POST">
     <label>
@@ -213,7 +224,7 @@
 
       
       
-      <article class="col d-flex justify-content-center "><iframe class="p-5 m-5 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6350.734350155497!2d-5.547616176246901!3d37.262719343169344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd129b5dbb0f356d%3A0x2ead099c3065b7ce!2sBodega%20La%20Mazaroca!5e0!3m2!1ses!2ses!4v1746736666407!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></article>
+      <article class="col d-flex justify-content-center " id="mapa"><iframe class="p-3 mt-md-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3175.685211060949!2d-5.562824823580164!3d37.25517554191988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd129b55202828a7%3A0x87f704c462b0def4!2sAv.%20de%20la%20Peseta%2C%2041600%2C%20Sevilla!5e0!3m2!1ses!2ses!4v1747655447800!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></article>
 
 
 
@@ -222,9 +233,9 @@
 
       
 
-
+    <div id="piepag" class="d-flex justify-content-center flex-wrap mt-5  "><p class="d-block d-md-inline"> <img  src="Hiblainox/Imagenes/tel-blanco.svg" alt="">:672 11 05 19 </p> <p class="d-block d-md-inline"><img class="ms-md-5" src="Hiblainox/Imagenes/email-blanco.svg" alt="">:hiblainox@gmail.com</p></div>
     </section>
-
+    
   </main>
 
   <footer></footer>
@@ -238,27 +249,8 @@
         new bootstrap.Tooltip(el);
       });
     
-      // 2) Copiar al portapapeles para LOS <a> con data-clipboard-text
-      document.querySelectorAll('a[data-clipboard-text]').forEach(el => {
-        el.addEventListener('click', async () => {
-          const texto = el.dataset.clipboardText;
-          try {
-            await navigator.clipboard.writeText(texto);
-            const tip = bootstrap.Tooltip.getInstance(el);
-            const original = el.getAttribute('data-bs-original-title') || el.getAttribute('title');
-            el.setAttribute('data-bs-original-title', '¡Copiado!');
-            tip.show();
-            setTimeout(() => {
-              el.setAttribute('data-bs-original-title', original);
-              tip.hide();
-            }, 1000);
-          } catch (err) {
-            console.error('Error copiando al portapapeles', err);
-          }
-        });
-      });
     
-      // 3) Intersection Observer para revelar al hacer scroll
+      // 2) Intersection Observer para revelar al hacer scroll
       const observer = new IntersectionObserver((entries, obs) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {

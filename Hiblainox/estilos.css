@@ -13,8 +13,9 @@
 }
 
 .colorcontacto {
-    background-color: #be7e99;
+    background-color: #475172;
 }
+
 
 .colorformulario{
     background-color: rgba(255, 255, 255, 0.185);
@@ -31,6 +32,14 @@
     overflow: hidden;
 }
 
+label{color: white;
+font-family: "Mi fuente", Arial, sans-serif; ;
+padding: 25px;
+font-size: 20px;}
+
+#piepag{color: white;
+font-size: 25px;}
+
 .fondo h1 {
     margin-bottom: 150px;
     font-family: "Mi fuente", Arial, sans-serif;
@@ -46,11 +55,26 @@
     }
 }
 
+#categorias li a{
+  font-size: 36px !important;
+}
+
+#categorias li {padding-top: 25px;
+padding-bottom: 25px;}
+
+#categorias li:hover{background-color: #475172;}
+
+
 main h1 {
     font-family: "Mi fuente", Arial, sans-serif;
     font-size: 48px;
    
 }
+
+#formtext{font-size: 50px;
+  color: white;
+margin-top: 20px;}
+
 
 hr {border: 3px solid rgb(133, 0, 0);
     border-radius: 30px;
