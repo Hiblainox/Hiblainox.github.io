@@ -4,6 +4,8 @@
     font-display: swap;
 }
 
+main{transform: scaleX(0.95);}
+
 .colorfondo {
     background-color: #bec6e4;
 }
