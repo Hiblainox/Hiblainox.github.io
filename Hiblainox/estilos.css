@@ -270,5 +270,16 @@ html, body {
 
 
       
-  
+  .navbar-brand img {
+  transition: transform 0.3s ease, margin 0.3s ease;
+}
+
+/* 2) Sólo aplica en móvil (hasta lg) */
+@media (max-width: 991.98px) { /* lg breakpoint */
+
+  .navbar.menu-open .navbar-brand img {
+    transform: scale(1.2); 
+    transition: 0.3s;      /* agrandar un 20% */
+  }
+}
   

@@ -12,10 +12,10 @@
 
 <body class="colorfondo">
   <header>
-  <nav class="navbar navbar-expand-lg colornavbar p-0">
+  <nav class="navbar navbar-expand-lg colornavbar p-3 p-lg-0">
     <div class="container-fluid">
       <div class="navbar-brand" href="#">
-        <img src="Hiblainox/Imagenes/logo.jpeg" class="rounded" width="80" alt="">
+        <img  src="Hiblainox/Imagenes/logo.jpeg" class="rounded  " width="80" alt="">
       </div>
 
       <!-- Botón toggler ahora colapsa hasta lg -->
@@ -241,11 +241,20 @@
   <!--  JS y Popper -->
   <script src="Hiblainox/js/bootstrap.bundle.min.js"></script>
   <script>
+
+ const collapseEl = document.getElementById('navbarSupportedContent');
+  const navEl      = document.querySelector('nav.navbar');
+
+  // Cuando el menú termina de abrirse en móvil...
+  collapseEl.addEventListener('shown.bs.collapse', () => {
+    navEl.classList.add('menu-open');
+  });
+  // ...y cuando termina de cerrarse:
+  collapseEl.addEventListener('hidden.bs.collapse', () => {
+    navEl.classList.remove('menu-open');
+  });
+
     document.addEventListener('DOMContentLoaded', function () {
-      // 1) Inicializar tooltips
-      document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach(el => {
-        new bootstrap.Tooltip(el);
-      });
     
     
       // 2) Intersection Observer para revelar al hacer scroll
@@ -263,6 +272,8 @@
       ).forEach(el => observer.observe(el));
 
     });
+
+    
     </script>
     
 </body>
