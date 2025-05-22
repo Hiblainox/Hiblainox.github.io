@@ -12,37 +12,39 @@
 
 <body class="colorfondo">
   <header>
-    <nav class="navbar navbar-expand-lg colornavbar p-3 p-lg-0">
+    <nav class="navbar navbar-expand-lg colornavbar p-3 p-lg-0 menu-open">
       <div class="container-fluid">
         <div class="navbar-brand" href="#">
           <img src="Hiblainox/Imagenes/logo.jpeg" class="rounded  " width="80" alt="">
         </div>
 
         <!-- Botón toggler ahora colapsa hasta lg -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <div class="collapse navbar-collapse show" id="navbarSupportedContent" style>
           <ul class="navbar-nav ms-0 mb-2 mb-lg-0 d-flex w-100">
 
             <!-- Enlaces principales -->
-            <div class="d-flex flex-column flex-lg-row">
+            <div class="d-flex flex-column flex-lg-row align-items-center">
               <li class="nav-item">
-                <a class="nav-link active fs-3 text-center text-lg-start mx-2" href="#">Inicio</a>
+                <a class="nav-link active fs-3 text-center text-lg-start mx-2" href="index.html">Inicio</a>
+                <hr class="d-lg-none">
               </li>
               <li class="nav-item">
                 <a class="nav-link fs-3 text-center text-lg-start mx-2" href="Hiblainox/trabajos.html">Trabajos</a>
+                <hr class="d-lg-none mb-2">
               </li>
-              <li class="nav-item">
+              <li class="nav-item contactbutton mb-lg-0 mb-3">
                 <a class="nav-link fs-3 text-center text-lg-start mx-2" href="#formulario">Contacto</a>
               </li>
             </div>
 
             <!-- Iconos MÓVIL (visible < lg) -->
             <li class="nav-item d-flex d-lg-none w-100 justify-content-center">
-              <div class="d-flex justify-content-center gap-4 flex-wrap my-2">
+              <div class="d-flex justify-content-center gap-4 flex-wrap my-2 ">
                 <a class="nav-link" role="button" title="672 11 05 19" href="tel:672110519">
                   <img src="Hiblainox/Imagenes/tel.svg" width="36" height="36" alt="">
                   672 11 05 19
@@ -62,30 +64,34 @@
 
             <!-- Iconos ESCRITORIO (visible ≥ lg) -->
             <div class="d-none d-lg-flex ms-auto">
-              <li class="nav-item">
-                <a class="nav-link fs-3 text-lg-start ms-3" role="button" title="hiblainox@gmail.com"
-                  href="mailto:hiblainox@gmail.com">
-                  <img src="Hiblainox/Imagenes/email.svg" width="36" height="36" alt="">
-                  hiblainox@gmail.com
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fs-3 text-lg-start ms-3" role="button" title="672 11 05 19" href="tel:672110519">
-                  <img src="Hiblainox/Imagenes/tel.svg" width="36" height="36" alt="">
-                  672 11 05 19
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fs-3 text-lg-start ms-3" href="https://www.facebook.com/jesus.idalgo.52">
-                  <img src="Hiblainox/Imagenes/facebook.svg" width="42" height="42" alt="">
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fs-3 text-lg-start ms-3 me-lg-4" role="button"
-                  title="Avenida de la Peseta, Arahal, Spain" href="#mapa">
-                  <img src="Hiblainox/Imagenes/localizacion.svg" width="36" height="36" alt="">
-                </a>
-              </li>
+              <div>
+                <li class="nav-item">
+                  <a class="nav-link fs-3 text-lg-start ms-3" role="button" title="hiblainox@gmail.com"
+                    href="mailto:hiblainox@gmail.com">
+                    <img src="Hiblainox/Imagenes/email.svg" width="36" height="36" alt="">
+                    hiblainox@gmail.com
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-3 text-lg-start ms-3" role="button" title="672 11 05 19" href="tel:672110519">
+                    <img src="Hiblainox/Imagenes/tel.svg" width="36" height="36" alt="">
+                    672 11 05 19
+                  </a>
+                </li>
+              </div>
+              <div>
+                <li class="nav-item">
+                  <a class="nav-link fs-3 text-lg-start ms-3" href="https://www.facebook.com/jesus.idalgo.52">
+                    <img src="Hiblainox/Imagenes/facebook.svg" width="42" height="42" alt="">
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-3 text-lg-start ms-3 me-lg-4" role="button"
+                    title="Avenida de la Peseta, Arahal, Spain" href="#mapa">
+                    <img src="Hiblainox/Imagenes/localizacion.svg" width="36" height="36" alt="">
+                  </a>
+                </li>
+              </div>
             </div>
 
           </ul>
@@ -98,7 +104,7 @@
     </div>
   </header>
 
-  </header>
+
 
   <main>
 
@@ -199,9 +205,9 @@
 
 
 
-    <footer class="row colorcontacto mt-3 d-flex justify-content-center p-5">
+    <footer class="row colorcontacto mt-3 d-flex justify-content-center p-5 ">
         <p id="formtext" class="text-center">Contáctanos</p>
-        <article class="col d-flex align-items-center justify-content-center ">
+        <article class="col-12 d-flex align-items-center justify-content-center col-lg-6 ">
             <form class="d-flex flex-column  colorformulario p-3 reveal-on-scroll " id="formulario"
                 action="https://formspree.io/f/movdlaej" method="POST">
                 <label>
@@ -223,7 +229,7 @@
 
 
 
-        <article class="col d-flex justify-content-center " id="mapa"><iframe class="p-3 mt-md-5"
+        <article class="col d-flex justify-content-center " id="mapa"><iframe class="p-3 mt-5 mt-lg-0"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3175.685211060949!2d-5.562824823580164!3d37.25517554191988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd129b55202828a7%3A0x87f704c462b0def4!2sAv.%20de%20la%20Peseta%2C%2041600%2C%20Sevilla!5e0!3m2!1ses!2ses!4v1747655447800!5m2!1ses!2ses"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe></article>
@@ -235,15 +241,14 @@
 
 
 
-        <div id="piepag" class="d-flex justify-content-center flex-wrap mt-5  ">
-            <p class="d-block d-md-inline"> <a href="tel:672110519"><img src="Hiblainox/Imagenes/tel-blanco.svg"  alt="">:672 11 05 19 </p> </a> 
-            <p class="d-block d-md-inline"><a href="mailto:hiblainox@gmail.com"><img class="ms-md-5" src="Hiblainox/Imagenes/email-blanco.svg"alt="">:hiblainox@gmail.com</p></a>
+        <div id="piepag" class="d-flex justify-content-center flex-wrap mt-5 px-0  ">
+            <p class="d-block d-md-inline"> <a href="tel:672110519"><img src="Hiblainox/Imagenes/tel-blanco.svg" width="40px" alt="">:672 11 05 19 </p> </a> 
+            <p class=" d-md-inline"><a href="mailto:hiblainox@gmail.com"><img class="ms-0 ms-sm-5" src="Hiblainox/Imagenes/email-blanco.svg" width="40px" alt="">:hiblainox@gmail.com</p></a>
         </div>
     </footer>
 
   </main>
 
-  <footer></footer>
 
   <!--  JS y Popper -->
   <script src="Hiblainox/js/bootstrap.bundle.min.js"></script>

@@ -8,8 +8,9 @@ html, body {
   overflow-x: hidden;
 }
 
-main {
+ main {
   transform: scaleX(0.95);
+  
 }
 
 .colorfondo {
@@ -57,11 +58,11 @@ main {
 }
 
 @media (max-width: 768px) {
-  .fondo h1,
-  .fondo2 h1 {
-    margin-top: 10px;
-    margin-bottom: 390px;
+  .fondo ,
+  .fondo2 {
+    height:500px ;
   }
+  .fondo2 h1{margin-bottom: 0px;}
 }
 
 main h1 {
@@ -85,7 +86,8 @@ label {
 #piepag a {
   text-decoration: none;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  
 }
 
 #categorias li {
@@ -379,3 +381,17 @@ form {
   cursor: pointer;
   z-index: 10001;
 }
+
+
+.contactbutton, .contactbutton a{ background-color: #9e3708;
+border-radius: 10px;
+color: rgb(220, 220, 221);}
+
+div li hr{border-width: 1px;
+width: 100%;}
+
+header p img{width: 8rem;
+  position: relative;
+  top: -70px;
+
+ }
